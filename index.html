@@ -1,61 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redemption Farms</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    main {
-      padding: 20px;
-      text-align: center;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-    .content {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redemption Farms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .mission, .vision {
+            margin-bottom: 2rem;
+        }
+        .gallery {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Redemption Farms</h1>
-  </header>
-  <main>
-    <div class="content">
-      <h2>Our Healing Community</h2>
-      <p>At Redemption Farms, we support families on their journey to healing and recovery. Our holistic approach to rehabilitation provides a safe, nurturing environment for families to live and work together as they heal.</p>
+    <header>
+        <h1>Welcome to Redemption Farms</h1>
+    </header>
+
+    <nav>
+        <a href="#mission">Mission</a>
+        <a href="#vision">Vision</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <div class="container">
+        <section id="mission" class="mission">
+            <h2>Our Mission</h2>
+            <p>Helping families at risk of separation due to substance misuse by offering a safe, supportive environment for recovery, work, and growth.</p>
+        </section>
+
+        <section id="vision" class="vision">
+            <h2>Our Vision</h2>
+            <p>Creating a world where families overcome addiction together and thrive through community, healing, and sustainable living.</p>
+        </section>
+
+        <section id="donate" class="donate">
+            <h2>Make a Difference</h2>
+            <p>Your donations help us provide life-changing support to families in need.</p>
+            <button onclick="window.location.href='https://example.com/donate'">Donate Now</button>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <p>Coming soon! Explore the heartwarming stories and beautiful moments at Redemption Farms.</p>
+        </section>
     </div>
-  </main>
-  <footer>
-    <p>© 2024 Redemption Farms. All rights reserved.</p>
-  </footer>
+
+    <footer>
+        <p>&copy; 2024 Redemption Farms. All rights reserved.</p>
+    </footer>
 </body>
 </html>
